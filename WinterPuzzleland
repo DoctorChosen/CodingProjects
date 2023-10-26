@@ -1,0 +1,200 @@
+// Boss fights for Winter Puzzleland:
+
+// This code is written using mcfunction which are just minecraft files wrapped with Javascript
+ 
+scoreboard players add santa event 1
+
+execute if score santa event matches 1 run tellraw @a [{"text":"<", "color":"white"},{"text":"S", "color":"red"},{"text":"a", "color":"white"},{"text":"n", "color":"red"},{"text":"t", "color":"white"},{"text":"a", "color":"red"}, {"text":"> ", "color":"white"}, {"text":"Be aware heroes that he is mostly blind, he'll find you through the sounds you make!", "color":"white"}]
+execute if score santa event matches 1 run playsound entity.wandering_trader.trade ambient @a 175 22 -381 100 0.8
+
+execute if score santa event matches 2 run tellraw @a [{"text":"<", "color":"white"},{"text":"S", "color":"red"},{"text":"a", "color":"white"},{"text":"n", "color":"red"},{"text":"t", "color":"white"},{"text":"a", "color":"red"}, {"text":"> ", "color":"white"}, {"text":"Don't stray too far from him, he can only use his sonic screech from far away.", "color":"white"}]
+execute if score santa event matches 2 run playsound entity.wandering_trader.trade ambient @a 175 22 -381 100 0.8
+
+execute if score santa event matches 3 run tellraw @a [{"text":"<", "color":"white"},{"text":"S", "color":"red"},{"text":"a", "color":"white"},{"text":"n", "color":"red"},{"text":"t", "color":"white"},{"text":"a", "color":"red"}, {"text":"> ", "color":"white"}, {"text":"Maybe you heroes can use the tnt and dripstone to your advantage, time your shots right.", "color":"white"}]
+execute if score santa event matches 3 run playsound entity.wandering_trader.trade ambient @a 175 22 -381 100 0.8
+
+execute if score santa event matches 4 run tellraw @a [{"text":"<", "color":"white"},{"text":"S", "color":"red"},{"text":"a", "color":"white"},{"text":"n", "color":"red"},{"text":"t", "color":"white"},{"text":"a", "color":"red"}, {"text":"> ", "color":"white"}, {"text":"He can't focus on all of you at once, use that to your advantage!", "color":"white"}]
+execute if score santa event matches 4 run playsound entity.wandering_trader.trade ambient @a 175 22 -381 100 0.8
+
+execute if score santa event matches 5 run tellraw @a [{"text":"<", "color":"white"},{"text":"S", "color":"red"},{"text":"a", "color":"white"},{"text":"n", "color":"red"},{"text":"t", "color":"white"},{"text":"a", "color":"red"}, {"text":"> ", "color":"white"}, {"text":"Heroes, I believe in all of you, don't lose heart if you take a nasty blow.", "color":"white"}]
+execute if score santa event matches 5 run playsound entity.wandering_trader.trade ambient @a 175 22 -381 100 0.8
+
+execute if score santa event matches 6 run tellraw @a [{"text":"<", "color":"white"},{"text":"S", "color":"red"},{"text":"a", "color":"white"},{"text":"n", "color":"red"},{"text":"t", "color":"white"},{"text":"a", "color":"red"}, {"text":"> ", "color":"white"}, {"text":"Do not fret if you are alone in the darkness, there is always a light at the end of the tunnel.", "color":"white"}]
+execute if score santa event matches 6 run playsound entity.wandering_trader.trade ambient @a 175 22 -381 100 0.8
+
+execute if score santa event matches 6 run scoreboard players set santa event 0
+execute if score santa event matches ..6 run schedule function boss:encouragement 45s
+
+scoreboard players add santa event 1
+
+execute if score santa event matches 1 run tellraw @a [{"text":"<", "color":"white"},{"text":"S", "color":"red"},{"text":"a", "color":"white"},{"text":"n", "color":"red"},{"text":"t", "color":"white"},{"text":"a", "color":"red"}, {"text":"> ", "color":"white"}, {"text":"Be aware heroes that he is mostly blind, he'll find you through the sounds you make!", "color":"white"}]
+execute if score santa event matches 1 run playsound entity.wandering_trader.trade ambient @a 175 22 -381 100 0.8
+
+execute if score santa event matches 2 run tellraw @a [{"text":"<", "color":"white"},{"text":"S", "color":"red"},{"text":"a", "color":"white"},{"text":"n", "color":"red"},{"text":"t", "color":"white"},{"text":"a", "color":"red"}, {"text":"> ", "color":"white"}, {"text":"Don't stray too far from him, he can only use his sonic screech from far away.", "color":"white"}]
+execute if score santa event matches 2 run playsound entity.wandering_trader.trade ambient @a 175 22 -381 100 0.8
+
+execute if score santa event matches 3 run tellraw @a [{"text":"<", "color":"white"},{"text":"S", "color":"red"},{"text":"a", "color":"white"},{"text":"n", "color":"red"},{"text":"t", "color":"white"},{"text":"a", "color":"red"}, {"text":"> ", "color":"white"}, {"text":"Maybe you heroes can use the tnt and dripstone to your advantage, time your shots right.", "color":"white"}]
+execute if score santa event matches 3 run playsound entity.wandering_trader.trade ambient @a 175 22 -381 100 0.8
+
+execute if score santa event matches 4 run tellraw @a [{"text":"<", "color":"white"},{"text":"S", "color":"red"},{"text":"a", "color":"white"},{"text":"n", "color":"red"},{"text":"t", "color":"white"},{"text":"a", "color":"red"}, {"text":"> ", "color":"white"}, {"text":"He can't focus on all of you at once, use that to your advantage!", "color":"white"}]
+execute if score santa event matches 4 run playsound entity.wandering_trader.trade ambient @a 175 22 -381 100 0.8
+
+execute if score santa event matches 5 run tellraw @a [{"text":"<", "color":"white"},{"text":"S", "color":"red"},{"text":"a", "color":"white"},{"text":"n", "color":"red"},{"text":"t", "color":"white"},{"text":"a", "color":"red"}, {"text":"> ", "color":"white"}, {"text":"Heroes, I believe in all of you, don't lose heart if you take a nasty blow.", "color":"white"}]
+execute if score santa event matches 5 run playsound entity.wandering_trader.trade ambient @a 175 22 -381 100 0.8
+
+execute if score santa event matches 6 run tellraw @a [{"text":"<", "color":"white"},{"text":"S", "color":"red"},{"text":"a", "color":"white"},{"text":"n", "color":"red"},{"text":"t", "color":"white"},{"text":"a", "color":"red"}, {"text":"> ", "color":"white"}, {"text":"Do not fret if you are alone in the darkness, there is always a light at the end of the tunnel.", "color":"white"}]
+execute if score santa event matches 6 run playsound entity.wandering_trader.trade ambient @a 175 22 -381 100 0.8
+
+execute if score santa event matches 6 run scoreboard players set santa event 0
+execute if score santa event matches ..6 run schedule function boss:encouragement 45s
+
+// Coding assignments/Projects from class
+
+
+package RainMonthlyArray;
+
+//Write a RainFall program that stores the total rainfall for each of 12 months into an array of doubles.
+//The program should have methods that return the following:
+//* The total rainfall for the year
+//* The average monthly rainfall
+//* The name of the month with the most rain
+//* The name of the month with the least rain
+//Demonstrate program. Input Validation should not allow negative numbers.
+
+/* Author: Dillan Jack
+Date: 10/01/2023
+Lab 07 for CISC 190
+*/
+
+import java.util.Scanner;
+
+public class RainMonthlyArray {
+public static void main(String[] args) {
+  // inputs to test
+  Scanner scanner = new Scanner(System.in);
+
+  // array
+  double[] rainfall = {0.0, 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0};
+
+  System.out.println("Please input the amount of rainfall for each month:");
+  
+    for (int month = 0; month < 12; month++) {
+      do {
+         System.out.println("Please enter rainfall for month " + (month + 1) + ": ");
+      rainfall[month] = scanner.nextDouble();
+      if (rainfall[month] < 0) {
+        System.out.println("Rainfall can't be negative.");
+      }
+      } while (rainfall[month] < 0);
+    }
+  scanner.close();
+  
+    // methods sum of rainfall
+  double totalRainfall = 0.0;
+  for (double monthRainfall : rainfall) {
+      totalRainfall += monthRainfall;
+        }
+  // average yearly rainfall
+  double averageRainfall = totalRainfall / 12;
+  
+  // most/leastRainfall
+  int mostRainfall = 0;
+  int leastRainfall = 0;
+      
+  for (int month = 1; month < 12; month++) {
+          if (rainfall[month] > rainfall[mostRainfall]) {
+              mostRainfall = month;
+          }
+          if (rainfall[month] < rainfall[leastRainfall]) {
+              leastRainfall = month;
+          }
+
+  }
+  String[] monthNames = {
+    "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"
+  };
+
+  System.out.println("The total rainfall for the year is  " + totalRainfall + " inches");
+  System.out.println("The average monthly rainfall is " + averageRainfall);
+  System.out.println("The month with the most rain is " + monthNames[mostRainfall]);
+  System.out.println("The month with the least rain is " + monthNames[leastRainfall]);
+}
+}
+
+package minTimer;
+
+import java.util.Scanner;
+
+//Write a program that asks the user to enter a number of seconds.
+//There are 60 seconds in a minute. If the number of seconds entered by the user is greater than or equal to 60, 
+//the program should display the number of minutes in that many seconds.
+//There are 3,600 seconds in an hour. If the number of seconds entered by the user is greater than or equal to 3,600,
+// the program should display the number of hours in that many seconds.
+//There are 86,400 seconds in a day. If the number of seconds entered by the user is greater than or equal to 86,400,
+// the program should display the number of days in that many seconds.
+
+/* Author: Dillan Jack
+Date: 09/08/2023
+Project 01 for CISC 190
+*/
+
+public class minTimer {
+	public static void main(String []args) {
+
+		final int SECONDS_IN_MINUTE = 60;
+        final int SECONDS_IN_HOUR = 3600;
+        final int SECONDS_IN_DAY = 86400;
+
+        Scanner keyboard;
+        int secs;
+	
+        do {
+		keyboard = new Scanner(System.in);
+		System.out.println("Please enter the number of seconds");
+		secs = keyboard.nextInt();
+        } while (secs < 0);
+	
+        keyboard.close();
+	
+        int days = secs / SECONDS_IN_DAY;
+        int remainingSeconds = secs % SECONDS_IN_DAY;
+     	int hours = remainingSeconds / SECONDS_IN_HOUR;
+     	remainingSeconds %= SECONDS_IN_HOUR;
+     	int mins = remainingSeconds / SECONDS_IN_MINUTE;
+     	int seconds = remainingSeconds % SECONDS_IN_MINUTE;
+     
+     	System.out.print("You entered " + secs + " seconds, which is ");
+     	
+     	if (days > 0) {
+         System.out.print(days + " days, ");
+     	}
+
+     	if (hours > 0 || days > 0) {
+         System.out.printf("%02d hours, ", hours);
+     	}
+
+     	if (mins > 0 || hours > 0 || days > 0) {
+         System.out.printf("%02d minutes, ", mins);
+     	}
+     	
+     	 System.out.printf("%02d seconds. ", seconds);
+      	 System.out.print("(");
+     	if (days > 0) {
+         System.out.print(days + " days ");
+     	}
+     	if (hours >= 0) {
+         System.out.printf("%02d:", hours);
+     	}
+     	
+     	if (mins >= 0) {
+         System.out.printf("%02d:", mins);
+     	}
+     	
+        if (seconds >= 0) {
+         System.out.printf("%02d", seconds);
+     	}
+        
+         System.out.print(")");
+	}
+}
+
